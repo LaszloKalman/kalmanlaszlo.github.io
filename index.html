@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kálmán László portfólió</title>
+    <link rel="stylesheet" href="css/main2.css">
+</head>
+<body>
+    <div class="container">
+        <div class="nav-wrapper">
+            <div class="left-side">
+                <div class="nav-link-wrapper">
+                    <a href="kapcsolat.html">Kezdőlap</a>
+                </div>
+
+                <div class="nav-link-wrapper">
+                    <a href="projects.html">Projektek</a>
+                </div>
+
+         
+                <div class="nav-link-wrapper">
+                    <a href="index.html">Kapcsolat</a>
+                </div>
+            </div>  
+               
+            
+            <div class="right-side">
+                <div class="brand">
+                    <div>KÁLMÁN LÁSZLÓ</div>
+                </div>
+                
+
+            </div>  
+
+        </div>
+
+        <div class="content-wrapper">
+            
+
+    </div>
+
+
+    
+    
+   
+    
+    <section>
+       
+        <nav>
+      <ul>
+      <li><img src="kepek/telo.svg" alt="kep" Height=270px>
+        <img src="kepek/kukac.png" alt="kepek" Height=270px>
+      </li>
+      </ul>
+        </nav>
+        <article>
+            <h2>Elérhetőségek</h2>
+            <p></p>
+            <br>
+          <h3>+36 30 123 4567 </h3>
+          <p></p>
+          <br>
+          <br>
+          <br>
+          
+          <h3> laszlo.kalman@edu.bme.hu</h3>
+         
+        </article>
+      </section>
+
+
+
+</body>
+
+<footer>
+    <div class="footer-contener">
+        <div class="othercontener">
+            <p1 class="left"><a href="#"></a>Copyright © Kálmán László</p1>
+            <p1 class="right"><a href="#"></a>Utolsó módosítás: 2020.05.22.</p1> 
+        </div>
+   
+    
+
+ </footer>
+<script>
+    const portfolioItems= document.querySelectorAll('.portfolio-item-wrapper')
+
+    portfolioItems.forEach(portfolioItem => {
+        portfolioItem.addEventListener('mouseover',()=>{
+            console.log(portfolioItem.childNodes[1].classList);
+            portfolioItem.childNodes[1].classList.add('img-darken');
+
+        })
+
+        portfolioItem.addEventListener('mouseout',()=>{
+            
+            portfolioItem.childNodes[1].classList.remove('img-darken');
+
+        })
+    })
+</script>
+</html>
